@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-family: "Ubuntu Sans";
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(200, 69, 252);
+    background: linear-gradient(90deg, rgba(200, 69, 252, 1) 30%, rgba(131, 58, 180, 1) 69%);
+    border-bottom: 3px #D1D7E0;
+}
+
+#menuLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navLinks {
+    margin: 1rem;
+}
+
+#menuLogo {
+    height: 1.5rem;
+}
+
+#baemLogo {
+    margin-top: 1rem;
+    height: 3.5rem;
+}
+
+#search {
+    height: 2rem;
+}
+
+main {
+    background-color: #2D283E;
+    height: fit-content;
+    height: 90vh;
+}
+
+.iconColor {
+    fill: aliceblue;
+}
+
+h1 {
+    color: #802BB1;
+    
+}
+
+h2 {
+    color: #802BB1;
+}
+
+
+
+/* Estilos para las tarjetas */
+.tarjeta {
+    width: calc(50% - 20px);
+    /* Ajusta el ancho de las tarjetas según tu diseño */
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.hideOnMobile {
+
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Estilos para móviles */
+    .tarjeta {
+        width: calc(100% - 20px);
+    }
+}
